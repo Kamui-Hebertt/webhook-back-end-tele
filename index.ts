@@ -55,7 +55,7 @@ app.listen(port, () => {
 bot.on('message', (msg) => {
   const chatId = msg.chat.id;
   const messageText = msg.text;
-
+console.log(msg);
   // You can handle the incoming message here, and if needed, save it to your database.
   console.log(`Received message from chat ID ${chatId}: "${messageText}"`);
 
