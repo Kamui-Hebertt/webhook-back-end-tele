@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import Message, { IMessage } from '../models/messsagesModel';
+import TelegramBot from 'node-telegram-bot-api';
 
 export const getMessages = async (req: Request, res: Response): Promise<void> => {
   try {
